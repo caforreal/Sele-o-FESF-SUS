@@ -1,0 +1,15 @@
+{% if status == "online" %}
+    <span style="color: limegreen; font-weight: bold;">
+        ● ONLINE
+    </span>
+
+{% elif status == "offline" %}
+    <span style="color: red; font-weight: bold;">
+        ● OFFLINE
+    </span>
+
+{% else %}
+    <span style="color: gray; font-weight: bold;">
+        ● UNKNOWN
+    </span>
+{% endif %}
