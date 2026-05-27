@@ -1,8 +1,0 @@
-setup.py
-meu_plugin/__init__.py
-meu_plugin/models.py
-meu_plugin/plugin.py
-meu_plugin.egg-info/PKG-INFO
-meu_plugin.egg-info/SOURCES.txt
-meu_plugin.egg-info/dependency_links.txt
-meu_plugin.egg-info/top_level.txt
