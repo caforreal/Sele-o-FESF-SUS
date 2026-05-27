@@ -1,0 +1,146 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #181b20;
+  color: #fff;
+  line-height: 1.6;
+  margin: 0;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  padding: 10;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+}
+
+/* Card */
+
+.post-card {
+  width: 320px;
+  height: 500px;
+  background-color: #181b20;
+  border: 1px solid #545a6a;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+}
+
+.post-card:hover {
+  scale: 1.02;
+  transition: all 0.3s ease-in-out;
+  background-color: #181b20;
+  border: 2px solid #c669df;
+  border-radius: 20px;
+}
+
+.avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: blueviolet;
+  background-image: linear-gradient(to top left, blueviolet, rgb(73, 31, 112));
+}
+
+.title {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.35s ease-in;
+}
+
+.title:hover {
+  color: rgb(166, 97, 230);
+}
+
+.datetime {
+  font-size: 12px;
+  color: rgb(168 179 207);
+  margin: 10px 0;
+}
+
+.image-preview,
+.post-card img {
+  flex: 1;
+  min-height: 150px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: blueviolet;
+  background-image: linear-gradient(to top left, blueviolet, rgb(73, 31, 112));
+  margin-bottom: 4px;
+  object-fit: cover;
+}
+
+.comment-like {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2px 0;
+}
+
+.comment-like span {
+  cursor: pointer;
+  height: 40px;
+  width: 50px;
+  padding: 0 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: all 0.15s ease;
+}
+
+.comment-like span:hover {
+  background-color: rgba(137, 43, 226, 0.096);
+}
+
+.comment-like span svg {
+  fill: rgb(255, 255, 255);
+  margin-right: 2px;
+}
+
+p {
+  font-size: 0.95rem;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+/* Efeito de aparição dos cards */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post-card {
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+}
+
